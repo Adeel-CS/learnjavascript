@@ -1,16 +1,31 @@
+let a = 5;
 
-function parents(){
-    console.log("I'm The Parent")
-    function childern(){
-        console.log("I'm the child")
-    }
+var b = 33;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function parents(){
+//     console.log("I'm The Parent")
+//     function childern(){
+//         console.log("I'm the child")
+//     }
     
-}
+// }
 
-var grandparent = 8
+// var grandparent = 8
 
-parents()
-childern()
+// parents()
+// childern()
 
 
 
