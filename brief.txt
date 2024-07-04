@@ -1,28 +1,6 @@
-Understanding block and block scope
+Closures in JS
+
+A funciton along its lexical environment is called Closures
 
 
-{
-    Compound statement
-}
-
-
-this was a block
-
-
-we group multiple statements in a block so we can use it later in where JS expects one statement
-
-_________________________For scope
-
-
-remember only one thing var acts fishy   real messed uped
-
-
-but let is like every other variable in C++
-
-_________________________
-Var does this thing called shadowing and illegal shadowing
-
-it will change the value of outer var from the block within the block
-
-but won't be able to assign the same value to it
-
+funciton bundled together with its surrounding state 

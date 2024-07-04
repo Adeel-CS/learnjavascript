@@ -1,12 +1,12 @@
-let a = 5;
+function a(){
+    var a= 8
+    function childern(){
+        console.log(a)
+    }
+    childern()
+}
 
-var b = 33;
-
-
-
-
-
-
+a()
 
 
 
