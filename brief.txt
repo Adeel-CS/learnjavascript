@@ -1,0 +1,4 @@
+Now uptil this commit i have just created the files and linked them and used a code from 
+universe.io to get a button that looked fine, 
+
+This directory is for me to lear javascript as fast as i can
