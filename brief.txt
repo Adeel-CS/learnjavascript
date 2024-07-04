@@ -1,4 +1,17 @@
-Now uptil this commit i have just created the files and linked them and used a code from 
-universe.io to get a button that looked fine, 
+Now just an overview on what Javascript is 
+A programming language
 
-This directory is for me to lear javascript as fast as i can
+When a program is run in js it will create a global context in which we have two parts
+one is the memory and the other is the code part
+It runs in two parts
+first it will store every thing in memory in first phase only the var naems and the functios
+as it is
+
+
+var will get undefined
+
+functions will be written as it si
+
+after tha the functions will have a local execution context
+
+and phase 2 will assign the var values
