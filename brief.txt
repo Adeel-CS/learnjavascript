@@ -1,30 +1,28 @@
-Now Learning Let and Const
-
-_________First remember the Concept of hoisting ______________
-
-In which you can call a variable before it is declared
-You get Undefined
+Understanding block and block scope
 
 
-_________________
+{
+    Compound statement
+}
 
 
-Now let is also hoisted but with a different method
-It gives error
-
-______________
+this was a block
 
 
-Temporal Deadzone is the time between the let is hoisted and the time 
-it get assigned a value.
+we group multiple statements in a block so we can use it later in where JS expects one statement
 
-_________________
-______________
+_________________________For scope
 
-Now if we try to get window that is the object created and everything inside is its 
 
-we can get window.var(variables)  
-but not window.let/Const
-since both these are assigned in a seperate script and area
+remember only one thing var acts fishy   real messed uped
 
-Window is the global object
+
+but let is like every other variable in C++
+
+_________________________
+Var does this thing called shadowing and illegal shadowing
+
+it will change the value of outer var from the block within the block
+
+but won't be able to assign the same value to it
+
