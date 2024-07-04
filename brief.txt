@@ -1,17 +1,10 @@
-Now just an overview on what Javascript is 
-A programming language
-
-When a program is run in js it will create a global context in which we have two parts
-one is the memory and the other is the code part
-It runs in two parts
-first it will store every thing in memory in first phase only the var naems and the functios
-as it is
+Concept of lexical environment in js
 
 
-var will get undefined
 
-functions will be written as it si
+When ever an Execution Context is created along with that a lexical enviroment is created
 
-after tha the functions will have a local execution context
+meaning all the data a var from the parent 
 
-and phase 2 will assign the var values
+
+for the outermost global EC(execution Context) the lexical environment will be NULL
