@@ -3,4 +3,17 @@ Closures in JS
 A funciton along its lexical environment is called Closures
 
 
-funciton bundled together with its surrounding state 
+funciton bundled together with its surrounding state ____
+
+
+______________________________________________________
+Where Closures are used in Javascript programming
+
+-Module Design Pattern
+-Currying
+-funciton Like Once
+-Memoize
+-Maintaining state in async world
+-Iterators
+-setTimeouts
+etc-------------______________________________________________________

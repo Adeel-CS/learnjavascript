@@ -1,12 +1,27 @@
-function a(){
-    var a= 8
-    function childern(){
+function x(){
+    var a =9
+    function y(){
         console.log(a)
     }
-    childern()
+    a =234
+    return y
 }
 
-a()
+var z =x()
+
+console.log(z)
+z()
+
+
+// function a(){
+//     var a= 8
+//     function childern(){
+//         console.log(a)
+//     }
+//     childern()
+// }
+
+// a()
 
 
 
@@ -33,11 +48,11 @@ a()
 //     console.log(b);
 // }
 
-// function somealert(){
-//     alert("Now jsut messing with this thing")
-// }
+function somealert(){
+    alert("Now just messing with this thing")
+}
 
-// document.getElementById("myButton").addEventListener("click",somealert)
+document.getElementById("myButton").addEventListener("click",somealert)
 
 // var b =10;
 // a();
