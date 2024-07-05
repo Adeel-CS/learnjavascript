@@ -1,19 +1,7 @@
-Closures in JS
-
-A funciton along its lexical environment is called Closures
+setTimeout In JS
 
 
-funciton bundled together with its surrounding state ____
+The concept is simple acts as a thread the program will wait a specific time before execution the function block
 
 
-______________________________________________________
-Where Closures are used in Javascript programming
-
--Module Design Pattern
--Currying
--funciton Like Once
--Memoize
--Maintaining state in async world
--Iterators
--setTimeouts
-etc-------------______________________________________________________
+Must remember that setTimeout is basically the reference block use let with it

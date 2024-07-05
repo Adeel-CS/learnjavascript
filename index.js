@@ -1,16 +1,34 @@
 function x(){
-    var a =9
-    function y(){
-        console.log(a)
-    }
-    a =234
-    return y
+    var i = "If you'r not then smile and then smile more and laugh it will help a lot"
+    setTimeout(() => {
+        console.log(i)
+    }, 3000);
+
+    console.log("Hi there looking happy today")
 }
 
-var z =x()
+x()
 
-console.log(z)
-z()
+
+
+
+
+
+
+
+// function x(){
+//     var a =9
+//     function y(){
+//         console.log(a)
+//     }
+//     a =234
+//     return y
+// }
+
+// var z =x()
+
+// console.log(z)
+// z()
 
 
 // function a(){
