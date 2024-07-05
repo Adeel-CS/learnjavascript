@@ -1,1 +1,3 @@
-Calli9ng the innner function inside a function  seee the uncommented code
+Data Privacy or Hiding or Encapsulation
+
+To save a variable fo mgetting changed by other fucntions or code we wrap that fucntion into closures
