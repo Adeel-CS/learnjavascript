@@ -1,19 +1,41 @@
-function x(){
-    for(var i=1; i<=5; i++){
-    function close(i){
-    setTimeout(function() {console.log(i)
-    }, i*1000)
-        
+function outer(){
+    var a =-34;
+    function inner(){
+        console.log(a)
     }
-    
-    close(i)
+    return inner
 }
+
+outer()()
+//or we ca nwrite in a way
+var close = outer()
+close()
+
+
+
+
+
+
+
+
+
+
+// function x(){
+//     for(var i=1; i<=5; i++){
+//     function close(i){
+//     setTimeout(function() {console.log(i)
+//     }, i*1000)
+        
+//     }
+    
+//     close(i)
+// }
         
 
-    console.log("Hi there looking happy today")
-}
+//     console.log("Hi there looking happy today")
+// }
 
-x()
+// x()
 
 
 

@@ -1,5 +1,1 @@
-setTimeout In JS
-
-
-what we did was using a closure we created a new copy of the variable and used it
-before the var send was a reference and it was not being changed by every settimeout but rather changed by all at once
+Calli9ng the innner function inside a function  seee the uncommented code
