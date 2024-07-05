@@ -1,7 +1,5 @@
 setTimeout In JS
 
 
-The concept is simple acts as a thread the program will wait a specific time before execution the function block
-
-
-Must remember that setTimeout is basically the reference block use let with it
+what we did was using a closure we created a new copy of the variable and used it
+before the var send was a reference and it was not being changed by every settimeout but rather changed by all at once

@@ -1,8 +1,14 @@
 function x(){
-    var i = "If you'r not then smile and then smile more and laugh it will help a lot"
-    setTimeout(() => {
-        console.log(i)
-    }, 3000);
+    for(var i=1; i<=5; i++){
+    function close(i){
+    setTimeout(function() {console.log(i)
+    }, i*1000)
+        
+    }
+    
+    close(i)
+}
+        
 
     console.log("Hi there looking happy today")
 }
