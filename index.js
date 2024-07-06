@@ -1,16 +1,27 @@
+//First class function
 
+//we can pass a fucntion inside an argument to function and even return a function and that is valid
 
-
-function Checking(){
-    var check = 8, notused = 3
-    return function temp(){
-        console.log(check)
-    }
-    temp()
+var temp = function(parameter1){
+    console.log(parameter1)
 }
 
-var newt = Checking()
-newt()
+temp(function(){
+    console.log("Hi there weird programming language, you are like the game that someone has played and completed alll the stages and misssion and now every thing is unlocked and now the game is not fun anymore")
+})
+
+
+
+// function Checking(){
+//     var check = 8, notused = 3
+//     return function temp(){
+//         console.log(check)
+//     }
+//     temp()
+// }
+
+// var newt = Checking()
+// newt()
 
   
   

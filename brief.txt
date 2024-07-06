@@ -1,1 +1,35 @@
-Garbage collector______________
+Anonymous function collector______________
+function without a name
+
+
+
+
+//Function statement___________________________________________
+function a(){
+    console.log("This is a fucntion statement that is it")
+}
+
+
+
+//Function expression_____________________________________
+
+var temp = fucntion(){
+    ---your statement
+}
+ in javascript there is this thing called function assigning where you can assign a function
+ to a variable and use it latter on
+
+
+
+Difference btween these two is collector______________hoisting_____________________
+
+
+You can get the fucntion before the var is assignned to it
+
+but you can get a fucntion statement before declaring it hoisting concept memorized
+
+
+----------------Function decleration_______________same as statement___________________________________________
+
+
+
