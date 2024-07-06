@@ -1,35 +1,20 @@
-Anonymous function collector______________
-function without a name
+Callback Functions in javascript
+_____________________________________________________
+
+the function that is send into another fucntion is called Callback fucntion
+
+since the since the function send can be called back into the other fucntion latter on therefore
+it is called Callback fucntion
+
+
+//this gives the concept of not blocking the main thread when writing the JS code
+//since javascript is synchronous and runs one code line at a time therefore blocking the main thread 
+//will cause alot of problemos
 
 
 
 
-//Function statement___________________________________________
-function a(){
-    console.log("This is a fucntion statement that is it")
-}
-
-
-
-//Function expression_____________________________________
-
-var temp = fucntion(){
-    ---your statement
-}
- in javascript there is this thing called function assigning where you can assign a function
- to a variable and use it latter on
-
-
-
-Difference btween these two is collector______________hoisting_____________________
-
-
-You can get the fucntion before the var is assignned to it
-
-but you can get a fucntion statement before declaring it hoisting concept memorized
-
-
-----------------Function decleration_______________same as statement___________________________________________
-
-
+_____________________________________________________Since
+we have the Callback fucntions and settimeout we can now perform asynchronous coding in out 
+JS program.
 
