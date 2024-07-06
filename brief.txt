@@ -8,3 +8,7 @@ we use
 
 
 al this inside a fucnntion check the index.js file
+
+
+Flaws that can be of closures
+_________________It consumes alot of memory and there could be chance of memory leaks
