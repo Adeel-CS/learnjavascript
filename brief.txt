@@ -1,3 +1,10 @@
-Data Privacy or Hiding or Encapsulation
+Costructor in JS
 
-To save a variable fo mgetting changed by other fucntions or code we wrap that fucntion into closures
+
+we use 
+    this.something = fucntion(which is unknown func) {
+    -----code here
+}
+
+
+al this inside a fucnntion check the index.js file

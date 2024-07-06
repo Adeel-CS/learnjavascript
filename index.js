@@ -1,15 +1,40 @@
-function outer(){
-    var a =-34;
-    function inner(){
-        console.log(a)
+    
+    
+    function Counter(){
+
+        var coutner =0
+        this.incrementing =function (){
+            coutner++;
+            console.log(coutner)
     }
-    return inner
+        this.decrement = function (){
+            coutner--;
+            console.log(coutner)
+        }
 }
 
-outer()()
-//or we ca nwrite in a way
-var close = outer()
-close()
+var counter1 = new Counter()//we have to call new since there is a constructor inside it
+
+counter1.incrementing()
+counter1.decrement()
+
+
+
+
+
+
+// function outer(){
+//     var a =-34;
+//     function inner(){
+//         console.log(a)
+//     }
+//     return inner
+// }
+
+// outer()()
+// //or we ca nwrite in a way
+// var close = outer()
+// close()
 
 
 
