@@ -1,22 +1,36 @@
-    
-    
-    function Counter(){
 
-        var coutner =0
-        this.incrementing =function (){
-            coutner++;
-            console.log(coutner)
+
+
+function Checking(){
+    var check = 8, notused = 3
+    return function temp(){
+        console.log(check)
     }
-        this.decrement = function (){
-            coutner--;
-            console.log(coutner)
-        }
+    temp()
 }
 
-var counter1 = new Counter()//we have to call new since there is a constructor inside it
+var newt = Checking()
+newt()
 
-counter1.incrementing()
-counter1.decrement()
+  
+  
+//     function Counter(){
+
+//         var coutner =0
+//         this.incrementing =function (){
+//             coutner++;
+//             console.log(coutner)
+//     }
+//         this.decrement = function (){
+//             coutner--;
+//             console.log(coutner)
+//         }
+// }
+
+// var counter1 = new Counter()//we have to call new since there is a constructor inside it
+
+// counter1.incrementing()
+// counter1.decrement()
 
 
 
