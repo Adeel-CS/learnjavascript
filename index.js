@@ -1,25 +1,29 @@
-//callback functions
+//THe development tools in JS NOw
+// let i =0
+// document.getElementById("clickme")
+// .addEventListener("click",function temptest(){
+//     // alert("The Hover Button was clicked my Nigga")
+ 
+//     console.log("Buddy it works now Learning is important mate",--i)
+   
+// })
+// ///Wrong way to do it
 
-setTimeout(function(){
-    console.log("time out")
-}, 5000)
 
-function x(y){
-    console.log("x")
-    y()
+//Correct way mate
+
+function WraperForHoverButton(){
+    let i =0
+    document.getElementById("clickme")
+    .addEventListener("click",function temptest(){
+        // alert("The Hover Button was clicked my Nigga")
+    
+        console.log("Buddy it works now Learning is important mate",--i)
+    
+    })
+///
 }
-x(function y(){
-    console.log("y")
-})
-
-
-//this gives the concept of not blocking the main thread when writing the JS code
-//since javascript is synchronous and runs one code line at a time therefore blocking the main thread 
-//will cause alot of problemos
-
-
-
-
+WraperForHoverButton()
 
 
 
