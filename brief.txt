@@ -1,3 +1,0 @@
-eventlistners are heavy and consume a lot of memory in them and can cause the site to 
-slow down to help prevent that we need to free up the closures remove the eventlistners
-
