@@ -34,3 +34,14 @@ other things inside the engine are the compiler's compilation tricks
         etc
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![OutputOfCode](images/output.jpeg)
+=======
+Start
+End
+Promise
+Timeout
+>>>>>>> 98a9307 (Promises which are send to the MicroQueue having higher priority than other queues along with that mutatiionobserver  also other dom and console are send to macroqueue or callback queue and there is concept of starvation and other  things learnt in OS)
+>>>>>>> 92bc5935a363427e5a187b4e2f76d971655560e9
