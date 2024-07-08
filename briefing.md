@@ -5,4 +5,4 @@ Here is the example images that i would be using  "
 
 Here is an example image:
 
-![Example Image](images/How callback function is executed It simply  got to the callback queue and waits for the function.png)
+![Example Image](images/temp.png)
