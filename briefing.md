@@ -19,4 +19,4 @@ the code is written in index.js
 
 and the output was as following on the right side under console
 
-![OutputOfCode](images/output.jpeg)
+![OutputOfCode](images/output.png)
