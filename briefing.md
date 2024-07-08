@@ -19,4 +19,11 @@ the code is written in index.js
 
 and the output was as following on the right side under console
 
+<<<<<<< HEAD
 ![OutputOfCode](images/output.jpeg)
+=======
+Start
+End
+Promise
+Timeout
+>>>>>>> 98a9307 (Promises which are send to the MicroQueue having higher priority than other queues along with that mutatiionobserver  also other dom and console are send to macroqueue or callback queue and there is concept of starvation and other  things learnt in OS)
