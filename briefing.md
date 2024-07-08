@@ -5,4 +5,4 @@ Here is the example images that i would be using  "
 
 Here is an example image:
 
-![Example Image](images/temp.png)
+![Example Image](images/temp.jpeg)
