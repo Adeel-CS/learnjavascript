@@ -1,8 +1,22 @@
-Now here is jus the temporary md file im checking if i can add the images 
+Fetch in JavaScript
 
-Here is the example images that i would be using  "
-# My Project
 
-Here is an example image:
+It has higher priority than SetTimeout()
 
-![Example Image](images/temp.jpeg)
+it is places in Microstack Queue
+
+And the priority is set by Event loop
+
+
+Microtask queue has higher priority it contains Promises and Mutationhandler
+
+![PromisesAndMicroQueue](images/PromisesMicroQueue.jpeg)
+
+This is just the concept learnt in Operating System again and again there is more to these queues and stacks which here uptil now its basic 
+
+
+the code is written in index.js
+
+and the output was as following on the right side under console
+
+![OutputOfCode](images/output.jpeg)
