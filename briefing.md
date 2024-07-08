@@ -1,25 +1,36 @@
-Fetch in JavaScript
+JavaScript Engine
+
+JavaScript RunTime Environment?
+![ListofECMAScriptEngines](images/listofjsengine.jpeg)
+
+JIT compilation (Just in Time Iterpretation)
+ uses both 
+
+ Interpretter and Compiler to run the code
+
+            most browers today use this to make code run faster and efficient
 
 
-It has higher priority than SetTimeout()
+![ExplanationOfJSEngine](images/jsengine.jpeg)
 
-it is places in Microstack Queue
+execution is not possible without 
 
-And the priority is set by Event loop
-
-
-Microtask queue has higher priority it contains Promises and Mutationhandler
-
-![PromisesAndMicroQueue](images/PromisesMicroQueue.jpeg)
-
-This is just the concept learnt in Operating System again and again there is more to these queues and stacks which here uptil now its basic 
+        Memory Heap
+        Call Stack
 
 
-the code is written in index.js
+memory heap stores all the variables and functions
 
-and the output was as following on the right side under console
 
-Start
-End
-Promise
-Timeout
+also Garbage collector that sweeps all the garbage 
+                Mark and Sweep algorithm
+
+
+other things inside the engine are the compiler's compilation tricks 
+
+        inlining
+        copy elision
+        inline caching
+        etc
+
+
