@@ -13,10 +13,10 @@ const diameter = function(radiu){
   return 2*radiu
 }
 
-const calculate = function(radiu, logic){
+Array.prototype.calculate = function(logic){
   const output = []
-  for(let i=0; i<radiu.length; i++){
-    output.push(logic(radiu[i]))
+  for(let i=0; i<this.length; i++){
+    output.push(logic(this[i]))
   }
   return output
 }
@@ -24,6 +24,6 @@ const calculate = function(radiu, logic){
 
 
 console.log(radiu.map(area))
-console.log(calculate(radiu,area))
+console.log(radiu.calculate(area))
 // console.log(calculate(radiu,circum))
 // console.log(calculate(radiu,diameter))
