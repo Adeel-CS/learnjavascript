@@ -1,9 +1,29 @@
-function callback(){
-  console.log('this is the function that will be send as argument AKA callBack Function')
+const radiu = [3,2,5,32]
+
+
+const area = function(radiu){
+  return Math.PI* radiu*radiu
 }
 
-function higherOrderFunction(callBack){
-  console.log('Now the higherOrder Funciton Will call the call Back function')
-  callBack()
+const circum = function(radiu){
+  return 2*Math.PI*radiu
 }
-higherOrderFunction(callback)
+
+const diameter = function(radiu){
+  return 2*radiu
+}
+
+const calculate = function(radiu, logic){
+  const output = []
+  for(let i=0; i<radiu.length; i++){
+    output.push(logic(radiu[i]))
+  }
+  return output
+}
+
+
+
+console.log(radiu.map(area))
+console.log(calculate(radiu,area))
+// console.log(calculate(radiu,circum))
+// console.log(calculate(radiu,diameter))

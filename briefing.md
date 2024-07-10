@@ -1,5 +1,6 @@
-Higher Order Function and _______Call Back Funtion
+Writing code in a good non repeating fashion
 
-the function that gets as argument or returns a function is a higher order function
+using functions programming higher order functional programming to solve complex and DRY code into nicer one
 
-the fucntion that is being send or returned is call callBack Function
+
+MapFunction In JS______________________________---
