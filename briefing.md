@@ -1,5 +1,11 @@
-MapFunction In JS______________________________---
+Prototype And Prototypal Inheritance in JavaScript
 
-How do map functions are created in JS
+One object trying to accss the fucntions of other objects
 
-writing modular program means using seperate module for sperate prorams or funcitons
+
+when we create anything inside js the js enine attachs hidden properties to our object
+and that is why we get access to those properties and methods
+
+
+____________________________________________
+
