@@ -1,16 +1,9 @@
-console.log('Start');
+function callback(){
+  console.log('this is the function that will be send as argument AKA callBack Function')
+}
 
-setTimeout(() => {
-  console.log('Timeout');
-}, 0);
-
-Promise.resolve().then(() => {
-  console.log('Promise');
-});
-
-console.log('End');
-
-
-
-
-
+function higherOrderFunction(callBack){
+  console.log('Now the higherOrder Funciton Will call the call Back function')
+  callBack()
+}
+higherOrderFunction(callback)
