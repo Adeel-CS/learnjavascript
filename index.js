@@ -1,31 +1,38 @@
-function Circle(radius) {
-  this.radius = radius;
+//Map in JS
+
+const arr = [1,3,34,42,2,3]
+
+const output = arr.map((x)=>
+  x.toString(2)
+)
+console.log(output)
+
+
+
+//Filter Inside a variable 
+//filtering all the odd numbers
+
+function isOdd(x){
+  return x%2
 }
 
-Circle.prototype.area = function() {
-  return Math.PI * this.radius * this.radius;
-};
+const output2 = arr.filter(isOdd)
+const output3 = arr.filter((x)=> x%2===0)
+console.log(output2)
+console.log(output3)
 
-Circle.prototype.circumference = function() {
-  return 2 * Math.PI * this.radius;
-};
+//_---------------------------------------------
+//Reduce function in JS
+//Giving one output from an array
+
+//Understanding the reduce using the reduce function in JS
+
+const output4 = arr.reduce(function(maxofarr, currentno){
+  if(maxofarr<currentno){
+    maxofarr = currentno
+  }
+  return maxofarr
+},0)
 
 
-const circle1 = new Circle(3);
-const circle2 = new Circle(5);
-
-console.log(circle1.area()); // Output: 28.274333882308138
-console.log(circle2.circumference()); // Output: 31.41592653589793
-
-
-//______________________________________________
-Function.prototype.mybind = function(){
-  console.log("My Bind will be accessable to all the functions")
-}
-
-function temp(){
-
-}
-
-temp.mybind()
-
+console.log(output4)
