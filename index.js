@@ -1,38 +1,53 @@
-//Map in JS
+const users = [
+  {firstname: "Ali",lastname: "Muhammad", age:23},
+  {firstname: "Me",lastname: "Imran", age:13},
+  {firstname: "Fahad",lastname: "Sher", age:43},
+  {firstname: "AHmed",lastname: "Abbass", age:21},
+  {firstname: "AHmed",lastname: "Abbass", age:21},
 
-const arr = [1,3,34,42,2,3]
+]
 
-const output = arr.map((x)=>
-  x.toString(2)
-)
-console.log(output)
+// const output = users.map((x)=> x.firstname + " And Age is:" + x.age)
 
+// console.log(output)
 
+//Now using the reduce function to chech the age and how many lie in that particular branch
 
-//Filter Inside a variable 
-//filtering all the odd numbers
+const output2 = users.reduce(function(accumulator, current){
+      if(accumulator[current.age]){
+        accumulator[current.age] = ++accumulator[current.age]
+      }
+      else{
+        accumulator[current.age] = 1
+      }
+      return accumulator
+},{})
 
-function isOdd(x){
-  return x%2
-}
-
-const output2 = arr.filter(isOdd)
-const output3 = arr.filter((x)=> x%2===0)
 console.log(output2)
+
+const output3 = users.filter(x=> x.age<22).map((x)=>x.firstname)
+
 console.log(output3)
 
-//_---------------------------------------------
-//Reduce function in JS
-//Giving one output from an array
+//Doing thesame thing using reduce
 
-//Understanding the reduce using the reduce function in JS
-
-const output4 = arr.reduce(function(maxofarr, currentno){
-  if(maxofarr<currentno){
-    maxofarr = currentno
+const output4 = users.reduce(function(accumulator,current){
+  if(current.age<22){
+    accumulator[current.lastname] = current.lastname
   }
-  return maxofarr
-},0)
-
-
+  return accumulator
+},{})
 console.log(output4)
+//---------------Handling the repeating lastnames
+const output5 = users.reduce(function(accumulator, current) {
+  if (current.age < 22) {
+    if (!accumulator[current.lastname]) {
+      accumulator[current.lastname] = []; // Initialize an array for the last name
+    }
+    accumulator[current.lastname].push(current); // Push the user object into the array
+  }
+  return accumulator;
+}, {});
+
+console.log(output5);
+
