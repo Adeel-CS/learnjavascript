@@ -1,3 +1,7 @@
-Callback Hell is when one funtion is dependent on the other after the execution and 
-we keep on going into the functions
+Promises
+ ---_____-____- _________________________________
+![PromisesInJS](images/Promises%20definition.jpeg)
 
+
+returninn the promise chain is must when writing code
+It will help grow the code horizontillay rather than verticlally
