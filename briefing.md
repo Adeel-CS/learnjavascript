@@ -7,3 +7,6 @@ returninn the promise chain is must when writing code
 It will help grow the code horizontillay rather than verticlally
 
 Now testing the branch restriction in the middle of the learning but this is also learning mate
+
+
+Now checking if it is protected or not?
