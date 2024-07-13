@@ -10,3 +10,6 @@ Now testing the branch restriction in the middle of the learning but this is als
 
 
 Now checking if it is protected or not?
+
+
+Always use the catch to handle error in your code when using then along with that
