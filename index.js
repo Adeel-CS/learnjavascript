@@ -1,54 +1,68 @@
-const cart = ["shoes","pants","mobiles",'jeans']
+const carts = ["Wallet", "Shampu", "Hair Dyer"];
 
-// reateOrder(cart,function(orderId){
-//   proceedToPayment(orderId)
-// })C
+function createOrder(cart) {
+  return new Promise((resolve, reject) => {
+    let Names = cart;
+    let numberOfProducts = cart.length;
+    let orderId = numberOfProducts * 23;
+    // console.log(numberOfProducts);
 
-const promise = CreateOrder(cart)
-
-//Promise returns an object that can be filled at any interval of time in the program
-promise
-.then(function(orderId){
-  console.log(orderId)
-  return orderId
-})
-.then(function(orderId){
-  return proceedToPayment(orderId)
-
-})
-.then(function (paymentverified){
-  console.log(paymentverified)
-})
-.catch(function(err){
-  console.log(err.message)
-})
-
-
-
-///Creating our own API fucntion with Promise functionalities
-
-function  CreateOrder(cart){
-  const promiseforCreatrOrder = new Promise(function(resolve, reject){
-    if(!validateCart(cart)){
-      const err = new Error("Cart is empty or invalid")
-      reject(err)
+    if (numberOfProducts !== 0) {
+      resolve(orderId);
+    } else {
+      reject("Cart is empty");
     }
+  });
+}
 
-    const orderId = "234dsa2"
-    if(orderId){
-      resolve(orderId)
+function proceedToPayment(orderId) {
+  return new Promise((resolve, reject) => {
+    // Simulate payment processing logic here
+    let paymentSuccessful = (orderId >=0); // Simulate successful payment condition
+    if (paymentSuccessful) {
+      resolve(true); // Resolve with a single boolean value
+    } else {
+      reject("Payment failed. No order ID provided.");
     }
+  });
+}
+
+function showOrderSummary(paymentId) {
+  return new Promise((resolve, reject) => {
+    if (paymentId) {
+      let canUpdateWallet = true;
+      resolve(canUpdateWallet);
+    } else {
+      reject("The Payment was not completed");
+    }
+  });
+}
+
+function updateWallet(canUpdateWallet) {
+  return new Promise((resolve, reject) => {
+    if (canUpdateWallet) {
+      resolve("Your Wallet Has been Updated. Thanks for shopping! Do more!");
+    } else {
+      reject("There was an error in updating the wallet");
+    }
+  });
+}
+
+createOrder(carts)
+  .then(orderId => {
+    // console.log("Order ID:", orderId);
+    return proceedToPayment(orderId);
   })
-
-  return promiseforCreatrOrder
-}
-
-function validateCart(cart){
-  return true
-}
-
-function proceedToPayment(orderId){
-  return new Promise(function(resolve,reject){
-    resolve("Payment Done")
+  .then(paymentId => {
+    // console.log("Payment done:", paymentId);
+    return showOrderSummary(paymentId);
   })
-}
+  .then(canUpdateWallet => {
+    return updateWallet(canUpdateWallet);
+  })
+  .then(message => {
+    console.log(message);
+  })
+  .catch(error => {
+    console.log("Error:", error);
+  });

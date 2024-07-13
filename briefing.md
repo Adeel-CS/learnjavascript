@@ -1,4 +1,8 @@
 Promise chaining
 _-------
+HomeWork 
 
-read the code and revise it to get good understanding of the code
+createOrder
+ProceedToPayment
+ShowOrderSummary
+UpdateWallet
