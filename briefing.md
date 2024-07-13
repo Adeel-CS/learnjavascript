@@ -1,15 +1,4 @@
-Promises
- ---_____-____- _________________________________
-![PromisesInJS](images/Promises%20definition.jpeg)
+Promise chaining
+_-------
 
-
-returninn the promise chain is must when writing code
-It will help grow the code horizontillay rather than verticlally
-
-Now testing the branch restriction in the middle of the learning but this is also learning mate
-
-
-Now checking if it is protected or not?
-
-
-Always use the catch to handle error in your code when using then along with that
+read the code and revise it to get good understanding of the code

@@ -7,8 +7,17 @@ const cart = ["shoes","pants","mobiles",'jeans']
 const promise = CreateOrder(cart)
 
 //Promise returns an object that can be filled at any interval of time in the program
-promise.then(function(orderId){
+promise
+.then(function(orderId){
   console.log(orderId)
+  return orderId
+})
+.then(function(orderId){
+  return proceedToPayment(orderId)
+
+})
+.then(function (paymentverified){
+  console.log(paymentverified)
 })
 .catch(function(err){
   console.log(err.message)
@@ -35,5 +44,11 @@ function  CreateOrder(cart){
 }
 
 function validateCart(cart){
-  return false
+  return true
+}
+
+function proceedToPayment(orderId){
+  return new Promise(function(resolve,reject){
+    resolve("Payment Done")
+  })
 }
