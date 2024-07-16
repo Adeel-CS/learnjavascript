@@ -1,24 +1,21 @@
-async function RecieveData(){
-  return "Random Proimise Value"
-}
-
-
-const RDataPromise = RecieveData()
-
-console.log(RDataPromise.then(res=> console.log(res)))
-
-
-const p = new Promise((resolve, reject)=>{
-  return resolve("The temporary function was Resolved! Remember the Asyn will always return a Promise Objectin which the value will be that can be seeen using the .then() method!")
+const APromise = new Promise((resolve, reject)=>{
+  if(3=="3"){
+    return resolve("Well it Does work like that !!___")
+  }
+  else if(3===3){
+    return reject("Well It does Work Like That for sure")
+  }
 })
 
-async function takesOnePromiseOnly(){
-  return p
+async function checking(){
+  const val = await APromise
+  console.log(val)
+  APromise.then((res)=>{
+    console.log(res)
+  })
+  .catch((err)=>{
+    console.error(err)
+  })
 }
 
-const Checking = takesOnePromiseOnly()
-
-Checking.then((result)=>{
-  console.log(result)
-})
-
+checking()

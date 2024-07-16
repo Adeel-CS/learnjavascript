@@ -1,4 +1,7 @@
-# Async Functions always return a Promise
+# Async Along with Await Functions always return a Promise
 
-** In the Async you will always get a Promise Object whose value can be **
-** Seen using the then method of the Returned Promise **
+** Async and Await are used to handle Promises **
+
+** await is a keyword that ---can only--- be used inside an async fucntion**
+Now await will give the resolved value of the promise written after it!!!!!!!!!___
+---
