@@ -1,53 +1,24 @@
-const p1 = new Promise(function (resolve, reject){
-  setTimeout(()=>{reject("P1 Wierd")},3000)
-})
-
-const p2 = new Promise((resolve,reject)=>
-{
-  setTimeout(function(){
-    resolve("P2 Success")
-  },2000)
-})
-
-const p3 = new Promise((resolve, reject)=>
-{
-  setTimeout(() => {
-    reject("P3 Failed")
-  }, 1000);
+async function RecieveData(){
+  return "Random Proimise Value"
 }
-)
 
 
-Promise.allSettled([p1, p2, p3])
-.then((res)=>{
-  console.log("The output for the AllSettled Part:^")
-  console.log(res)
-})
-.catch((err)=>{
-  console.log("The output for the AllSettled Part:^")
-  console.error(err)
+const RDataPromise = RecieveData()
+
+console.log(RDataPromise.then(res=> console.log(res)))
+
+
+const p = new Promise((resolve, reject)=>{
+  return resolve("The temporary function was Resolved! Remember the Asyn will always return a Promise Objectin which the value will be that can be seeen using the .then() method!")
 })
 
-Promise.race([p1, p2, p3])
-.then((res)=>
-{
-  console.log("Output for the race Part:^")
-  console.log(res)
+async function takesOnePromiseOnly(){
+  return p
+}
 
-})
-.catch((err)=>{
-  console.log("Output for the race Part:^")
-  console.error(err)
+const Checking = takesOnePromiseOnly()
+
+Checking.then((result)=>{
+  console.log(result)
 })
 
-Promise.any([p1,p3])
-.then((res)=>{
-  console.log("The Output for the Any Part of the Promise:^ ")
-  console.log(res)
-})
-.catch((err)=>{
-  console.log("The Output for the Any Part of the Promise:^ ")
-  console.error(err)
-  //To check the arry of aggreated eror we have to call the variable from the error object
-  console.log(err.error)
-})

@@ -1,6 +1,4 @@
-# Promise all Example now  in the code
-**The PromiseSettled Provide us with array of Object that will have status and value in case of success and a status and reason in case of rejection**
+# Async Functions always return a Promise
 
-# Now working with race 
-
-# Promise.any also
+** In the Async you will always get a Promise Object whose value can be **
+** Seen using the then method of the Returned Promise **
